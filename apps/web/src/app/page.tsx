@@ -1,10 +1,27 @@
+import { Nav } from '@/components/landing/Nav';
+import { Hero } from '@/components/landing/Hero';
+import { HowItWorks } from '@/components/landing/HowItWorks';
+import { FeatureSpread } from '@/components/landing/FeatureSpread';
+import { ChangesDark } from '@/components/landing/ChangesDark';
+import { AgencyBand } from '@/components/landing/AgencyBand';
+import { Pricing } from '@/components/landing/Pricing';
+import { CtaScan } from '@/components/landing/CtaScan';
+import { Footer } from '@/components/landing/Footer';
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold tracking-tight">SiteHealth</h1>
-      <p className="mt-4 text-lg text-muted-foreground">
-        Website health monitoring for agencies — speed, SEO basics, and security posture.
-      </p>
-    </main>
+    <>
+      <Nav />
+      <main className="w-full pt-14">
+        <Hero />
+        <HowItWorks />
+        <FeatureSpread />
+        <ChangesDark />
+        <AgencyBand />
+        <Pricing />
+        <CtaScan />
+      </main>
+      <Footer />
+    </>
   );
 }

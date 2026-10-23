@@ -33,3 +33,5 @@ coverage
 
 # Docker
 docker-compose.override.yml
+# Design source materials (kept at repo root, not part of the source tree)
+stitch_sitesignal_editorial_agency_landing*.zip

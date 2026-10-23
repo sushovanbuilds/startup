@@ -14,6 +14,7 @@ Lanes can run in parallel by different agents. Stage order matters, lanes inside
 [x] T1.4 (C) Security checks: TLS, headers, cookies, SPF/DMARC | packages/scanner/src/checks/security | FINDINGS-SPEC | T1.1,T0.2 | fixture tests; no false-alarm wording (claimed: agent 2026-10-23)
 [ ] T1.5 Scan orchestrator + normalization + fingerprinting | packages/scanner | FINDINGS-SPEC | T1.2-1.4 | URL in -> findings out
 [ ] T1.6 Landing page + free scan UI + results + share link | apps/web | PRD | T1.5 | works end-to-end with rate limit
+[ ] T1.6a Landing page UI (static) | apps/web components/landing + app/page.tsx | Stitch: stitch_sitesignal_editorial_agency_landing | T0.1 | rebuild Stitch design pixel-faithful; tokens in Tailwind config; self-hosted fonts via next/font; pricing from packages/shared/plans.ts; responsive 1440/390; no external CDN images (claimed: agent 2026-10-24)
 
 ## Stage 2 — Platform
 [ ] T2.1 Auth + workspaces + membership + authz middleware | apps/web | DATA-MODEL | T0.3 | cross-tenant tests

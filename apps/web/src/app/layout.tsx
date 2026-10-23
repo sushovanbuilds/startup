@@ -1,8 +1,28 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, JetBrains_Mono, Newsreader } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+// Self-hosted via next/font: binaries are vendored into the build, no runtime CDN.
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  axes: ['opsz'],
+  variable: '--font-display',
+});
+
+// Geist is not in next 14.2's bundled next/font data; Inter is the closest
+// self-hostable grotesque stand-in (recorded in docs/HANDOFF.md).
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-sans',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-mono',
+});
 
 export const metadata: Metadata = {
   title: 'SiteHealth — Website Health Monitoring',
@@ -16,7 +36,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${newsreader.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

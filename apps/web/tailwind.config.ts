@@ -43,6 +43,40 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        // "Technical Broadsheet" editorial palette (ported from the Stitch design)
+        paper: {
+          DEFAULT: '#FCF9F2',
+          low: '#F6F3EC',
+          mid: '#F2EFE8',
+          high: '#EBE8DF',
+        },
+        carbon: {
+          DEFAULT: '#111210',
+          soft: '#1F201D',
+          light: '#2E302B',
+        },
+        signal: {
+          DEFAULT: '#FF5A1F',
+          dim: '#D8430D',
+        },
+        rule: {
+          DEFAULT: '#DCDAD3',
+          dark: '#8A8C80',
+        },
+        ink: {
+          DEFAULT: '#111210',
+          muted: '#555750',
+        },
+      },
+      fontFamily: {
+        display: ['var(--font-display)', 'Georgia', 'serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        // Instrument-plate shadow from the design system
+        plate:
+          '0 16px 32px -8px rgba(17, 18, 16, 0.08), 0 1px 2px 0 rgba(17, 18, 16, 0.04)',
       },
       borderRadius: {
         lg: 'var(--radius)',

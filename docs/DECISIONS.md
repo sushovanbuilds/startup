@@ -5,3 +5,4 @@
 - Monorepo with separate worker process.
 - Pricing in packages/shared/plans.ts is a hypothesis; change there only.
 - Drizzle ORM for DB schema/migrations (type-safe, lightweight, works with Postgres/Supabase)
+- eslint-config-next@14.2.35 devDep in apps/web — makes `next lint` non-interactive and gives the web app a real lint gate.
