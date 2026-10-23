@@ -11,7 +11,7 @@ Lanes can run in parallel by different agents. Stage order matters, lanes inside
 [x] T1.1 (A) safe-fetch + full SSRF test suite | packages/scanner/src/net | SECURITY-SCANNER | T0.1 | all listed tests pass (claimed: agent 2026-10-23)
 [x] T1.2 (B) PSI client + caching + perf checks | packages/scanner/src/checks/perf | FINDINGS-SPEC | T0.2 | fixtures; handles API errors/quota (claimed: agent 2026-10-23)
 [x] T1.3 (B) SEO checks + bounded crawler (uses safe-fetch) | packages/scanner/src/checks/seo | FINDINGS-SPEC | T1.1,T0.2 | fixture tests; respects limits (claimed: agent 2026-10-23)
-[ ] T1.4 (C) Security checks: TLS, headers, cookies, SPF/DMARC | packages/scanner/src/checks/security | FINDINGS-SPEC | T1.1,T0.2 | fixture tests; no false-alarm wording
+[x] T1.4 (C) Security checks: TLS, headers, cookies, SPF/DMARC | packages/scanner/src/checks/security | FINDINGS-SPEC | T1.1,T0.2 | fixture tests; no false-alarm wording (claimed: agent 2026-10-23)
 [ ] T1.5 Scan orchestrator + normalization + fingerprinting | packages/scanner | FINDINGS-SPEC | T1.2-1.4 | URL in -> findings out
 [ ] T1.6 Landing page + free scan UI + results + share link | apps/web | PRD | T1.5 | works end-to-end with rate limit
 
