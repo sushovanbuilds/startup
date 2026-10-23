@@ -62,6 +62,9 @@ const config: Config = {
         rule: {
           DEFAULT: '#DCDAD3',
           dark: '#8A8C80',
+          // Lightened rule tone for small text on carbon surfaces (#8A8C80 is
+          // 4.45:1 on carbon-soft, just under AA; this one is 7.4:1).
+          bright: '#B4B6AC',
         },
         ink: {
           DEFAULT: '#111210',

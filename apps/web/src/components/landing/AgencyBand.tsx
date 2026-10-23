@@ -34,7 +34,7 @@ export function AgencyBand() {
       <div className="max-w-[1440px] mx-auto">
         <div className="mb-10 pb-4 border-b border-rule flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <span className="font-mono text-xs uppercase text-signal font-bold tracking-widest">
+            <span className="font-mono text-xs uppercase text-carbon font-bold tracking-widest">
               04 // WHITE-LABEL SOVEREIGNTY
             </span>
             <h2 className="font-display text-3xl sm:text-4xl text-carbon tracking-tight mt-1">
@@ -56,9 +56,9 @@ export function AgencyBand() {
             >
               <div className="font-mono text-[10px] text-ink-muted uppercase tracking-wider mb-4 border-b border-rule pb-2 flex justify-between">
                 <span>{p.cat}</span>
-                <span className="text-signal font-bold">{p.badge}</span>
+                <span className="text-carbon font-bold">{p.badge}</span>
               </div>
-              <div className="font-display text-2xl text-carbon mb-1">{p.title}</div>
+              <h3 className="font-display text-2xl text-carbon mb-1">{p.title}</h3>
               <div className="font-mono text-xs text-ink-muted mb-4">{p.sub}</div>
               <p className="text-sm text-ink-muted leading-relaxed">{p.body}</p>
             </div>

@@ -70,6 +70,21 @@
     @apply bg-signal text-white;
   }
 
+  /* Keyboard focus: carbon ring with offset gap. Nothing focusable sits on the
+     dark carbon section, so one universal ring color works everywhere. */
+  :focus-visible {
+    outline: 2px solid #111210;
+    outline-offset: 2px;
+  }
+
+  /* Paint-only decorative watermarks (giant step numerals, footer wordmark).
+     Content is drawn from a data- attribute through ::after so the DOM keeps
+     no low-contrast text nodes; the visual is unchanged. */
+  .wm-after::after {
+    content: attr(data-wm);
+    display: block;
+  }
+
   * {
     border-radius: 0 !important;
   }

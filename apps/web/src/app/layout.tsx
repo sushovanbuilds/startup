@@ -25,8 +25,24 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'SiteHealth — Website Health Monitoring',
-  description: 'Speed, SEO basics, and security posture monitoring for agencies.',
+  title: 'SiteHealth — Website Health Monitoring for Agencies',
+  description:
+    'SiteHealth runs automated speed, SEO, and security-posture checks on your client roster, turning website health into branded monthly retainer reports.',
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: 'SiteHealth — Website Health Monitoring for Agencies',
+    description:
+      'Automated Core Web Vitals, SEO, and security-posture monitoring for agency client rosters, delivered as white-labeled client reports.',
+    type: 'website',
+    siteName: 'SiteHealth',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'SiteHealth — Website Health Monitoring for Agencies',
+    description:
+      'Automated Core Web Vitals, SEO, and security-posture monitoring for agency client rosters.',
+  },
 };
 
 export default function RootLayout({

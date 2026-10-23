@@ -8,7 +8,7 @@ export function ChangesDark() {
       host: 'arc-furniture.com',
       desc: 'Third-party marketing container injected +142KB script (+180ms Total Blocking Time).',
       badge: 'REGRESSION DETECTED',
-      badgeClass: 'bg-signal text-white',
+      badgeClass: 'bg-signal text-carbon',
     },
     {
       ts: '2025-05-16 11:02 UTC',
@@ -41,7 +41,7 @@ export function ChangesDark() {
               What changed <em className="italic font-normal">since last month.</em>
             </h2>
           </div>
-          <p className="text-sm text-rule-dark max-w-md">
+          <p className="text-sm text-rule-bright max-w-md">
             Client sites rarely collapse in catastrophic waves. They erode through
             unannounced CMS plugins, bloated analytics containers, and stale staging
             redirects.
@@ -51,7 +51,7 @@ export function ChangesDark() {
         {/* Diff Ledger Table */}
         <div className="border border-white/20 bg-carbon-soft">
           {/* Ledger Header */}
-          <div className="px-5 py-3 bg-white/5 border-b border-white/10 flex items-center justify-between font-mono text-xs text-rule-dark">
+          <div className="px-5 py-3 bg-white/5 border-b border-white/10 flex items-center justify-between font-mono text-xs text-rule-bright">
             <span className="text-white font-semibold">
               FLEET DRIFT LEDGER // AUDITED EVENTS
             </span>
@@ -69,7 +69,7 @@ export function ChangesDark() {
                 className="p-5 flex flex-col lg:flex-row lg:items-center justify-between gap-2 hover:bg-white/[0.03] transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-rule-dark text-[11px]">{ev.ts}</span>
+                  <span className="text-rule-bright text-[11px]">{ev.ts}</span>
                   <span className="text-white font-bold">{ev.host}</span>
                 </div>
                 <div className="text-[#DCDAD3] text-[13px] flex-1 lg:px-8">
@@ -88,7 +88,7 @@ export function ChangesDark() {
 
           {/* 30-Day Stability Sparkline Trace */}
           <div className="p-5 bg-white/[0.02] border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs">
-            <div className="text-rule-dark">
+            <div className="text-rule-bright">
               <span className="text-white font-bold">
                 FLEET STABILITY COEFFICIENT (30-DAY TIMELINE):
               </span>
@@ -100,6 +100,8 @@ export function ChangesDark() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 320 30"
+                role="img"
+                aria-label="Fleet stability over 30 days: 99.4% to 97.2% dip, recovering to 99.8%."
               >
                 <polyline
                   fill="none"

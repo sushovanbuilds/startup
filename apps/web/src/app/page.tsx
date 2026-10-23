@@ -11,8 +11,14 @@ import { Footer } from '@/components/landing/Footer';
 export default function HomePage() {
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-carbon focus:px-4 focus:py-2 focus:font-mono focus:text-xs focus:uppercase focus:tracking-wider focus:text-white"
+      >
+        Skip to main content
+      </a>
       <Nav />
-      <main className="w-full pt-14">
+      <main id="main-content" className="w-full pt-14">
         <Hero />
         <HowItWorks />
         <FeatureSpread />

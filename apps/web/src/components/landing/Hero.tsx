@@ -7,10 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export function Hero() {
   return (
     <section className="w-full bg-paper relative px-4 sm:px-8 lg:px-12 pt-12 lg:pt-16 pb-16 border-b border-rule">
-      <span className="absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-rule-dark font-mono text-sm select-none">
+      <span className="absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-ink-muted font-mono text-sm select-none">
         ⌖
       </span>
-      <span className="absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-rule-dark font-mono text-sm select-none">
+      <span className="absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-ink-muted font-mono text-sm select-none">
         ⌖
       </span>
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-start">
@@ -18,10 +18,10 @@ export function Hero() {
         <div className="lg:col-span-6 flex flex-col justify-between pt-2">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <span className="font-mono text-[11px] uppercase text-signal font-bold tracking-widest">
+              <span className="font-mono text-[11px] uppercase text-carbon font-bold tracking-widest">
                 PLATE 01 / INSTRUMENT DISPATCH
               </span>
-              <span className="text-rule-dark font-mono text-[11px]">§ 104.28</span>
+              <span className="text-ink-muted font-mono text-[11px]">§ 104.28</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-[62px] text-carbon tracking-tight mb-5 leading-[1.04]">
               Your clients’ websites, <em className="italic font-normal">quietly</em>{' '}
@@ -44,19 +44,20 @@ export function Hero() {
             </div>
             {/* Visual-only scan input for now: no API calls in T1.6a */}
             <form className="flex flex-col sm:flex-row gap-2 mt-1">
-              <div className="flex-1 flex items-center bg-white border border-carbon/20 px-3 py-2.5">
-                <span className="font-mono text-xs text-signal mr-2 select-none font-bold">
+              <div className="flex-1 flex items-center bg-white border border-carbon/20 px-3 py-2.5 focus-within:border-carbon">
+                <span className="font-mono text-xs text-carbon mr-2 select-none font-bold">
                   URI &gt;
                 </span>
                 <input
-                  className="w-full bg-transparent font-mono text-[13px] text-carbon placeholder:text-ink-muted/60 focus:outline-none"
+                  aria-label="Client website URL to scan"
+                  className="w-full bg-transparent font-mono text-[13px] text-carbon placeholder:text-ink-muted/60"
                   placeholder="e.g. meridian-studio.com"
                   type="text"
                   defaultValue="https://meridian-studio.com"
                 />
               </div>
               <button
-                className="bg-signal text-white font-mono text-[11px] uppercase font-bold tracking-wider px-6 py-3 hover:bg-carbon transition-colors flex items-center justify-center gap-2 shrink-0"
+                className="bg-signal text-carbon font-mono text-[11px] uppercase font-bold tracking-wider px-6 py-3 hover:bg-carbon hover:text-white transition-colors flex items-center justify-center gap-2 shrink-0"
                 type="button"
               >
                 <span>RUN DIAGNOSTIC</span>
@@ -120,7 +121,7 @@ export function Hero() {
                 <div className="relative z-30 mb-3 bg-white border border-carbon/30 p-3.5 shadow-plate hover:-translate-y-1 transition-transform">
                   <div className="flex items-center justify-between border-b border-rule pb-2 mb-2 font-mono text-[11px]">
                     <div className="flex items-center gap-2 text-carbon font-bold">
-                      <span className="text-signal">■</span>
+                      <span aria-hidden="true" className="inline-block w-2 h-2 bg-signal"></span>
                       <span>[PLATE 01: RUNTIME &amp; CORE WEB VITALS]</span>
                     </div>
                     <span className="bg-paper-mid px-2 py-0.5 text-[10px] text-carbon font-bold border border-rule">
@@ -133,7 +134,7 @@ export function Hero() {
                         LCP OBSERVED
                       </span>
                       <span className="text-base font-bold text-carbon">1.14s</span>
-                      <span className="text-[9px] text-signal font-semibold block">
+                      <span className="text-[9px] text-carbon font-semibold block">
                         NOMINAL (&lt;2.5s)
                       </span>
                     </div>
@@ -142,7 +143,7 @@ export function Hero() {
                         CLS DELTA
                       </span>
                       <span className="text-base font-bold text-carbon">0.008</span>
-                      <span className="text-[9px] text-signal font-semibold block">
+                      <span className="text-[9px] text-carbon font-semibold block">
                         ZERO DRIFT
                       </span>
                     </div>
@@ -151,7 +152,7 @@ export function Hero() {
                         INP INPUT
                       </span>
                       <span className="text-base font-bold text-carbon">42ms</span>
-                      <span className="text-[9px] text-signal font-semibold block">
+                      <span className="text-[9px] text-carbon font-semibold block">
                         RESPONSIVE
                       </span>
                     </div>
@@ -197,7 +198,7 @@ export function Hero() {
                       <span className="text-carbon-soft">■</span>
                       <span>[PLATE 03: DEFENSE POSTURE &amp; TLS]</span>
                     </div>
-                    <span className="text-signal font-bold text-[10px]">
+                    <span className="text-carbon font-bold text-[10px]">
                       SSL RENEWAL: 64 DAYS REMAINING
                     </span>
                   </div>
@@ -226,7 +227,7 @@ export function Hero() {
 
               {/* Foreground Archival Inspection Specimen Tag */}
               <div className="mt-4 bg-white border border-carbon/40 p-3 relative font-mono text-[11px]">
-                <div className="absolute -top-2.5 right-4 bg-signal text-white px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest">
+                <div className="absolute -top-2.5 right-4 bg-signal text-carbon px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest">
                   SAMPLE CLIENT DOSSIER PROOF
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 border-b border-rule pb-2 mb-2">
@@ -237,7 +238,7 @@ export function Hero() {
                     <span className="text-ink-muted ml-2">ROSTER ID: #VRV-88219</span>
                   </div>
                   <div className="text-carbon font-bold">
-                    SYNTHETIC SCORE: <span className="text-signal font-bold">88 / 100</span>
+                    SYNTHETIC SCORE: <span className="text-carbon font-bold">88 / 100</span>
                   </div>
                 </div>
                 <p className="font-sans text-xs text-ink-muted italic">

@@ -20,10 +20,10 @@ export function Footer() {
   return (
     <footer className="w-full bg-paper-low text-ink relative overflow-hidden border-t border-rule">
       <div className="w-full px-4 sm:px-8 lg:px-12 pt-16 pb-8 relative">
-        <div className="absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-rule-dark font-mono text-xs select-none pointer-events-none">
+        <div className="absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-ink-muted font-mono text-xs select-none pointer-events-none">
           +
         </div>
-        <div className="absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-rule-dark font-mono text-xs select-none pointer-events-none">
+        <div className="absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-ink-muted font-mono text-xs select-none pointer-events-none">
           +
         </div>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
@@ -33,7 +33,7 @@ export function Footer() {
                 <span className="font-display text-2xl text-carbon font-normal">
                   SiteHealth
                 </span>
-                <span className="font-mono text-[10px] text-signal font-semibold tracking-widest border border-signal/30 px-1">
+                <span className="font-mono text-[10px] text-carbon font-semibold tracking-widest border border-signal/30 px-1">
                   INDEX_084/REV.B
                 </span>
               </div>
@@ -54,13 +54,13 @@ export function Footer() {
           <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-xs">
             {columns.map((col) => (
               <div key={col.title} className="space-y-3">
-                <div className="uppercase text-signal font-bold tracking-wider text-[11px]">
+                <div className="uppercase text-carbon font-bold tracking-wider text-[11px]">
                   {col.title}
                 </div>
                 <ul className="space-y-2 text-ink-muted">
                   {col.links.map((link) => (
                     <li key={link}>
-                      <a className="hover:text-carbon transition-colors" href="#">
+                      <a className="hover:text-carbon transition-colors inline-block py-2 -my-2" href="#">
                         {link}
                       </a>
                     </li>
@@ -81,11 +81,15 @@ export function Footer() {
           </div>
         </div>
       </div>
-      {/* Monumental Cropped Wordmark */}
-      <div className="w-full overflow-hidden select-none pointer-events-none opacity-[0.05] -mb-6 sm:-mb-12 lg:-mb-16">
-        <span className="block font-display text-[8rem] sm:text-[14rem] lg:text-[19rem] leading-none tracking-tighter text-carbon whitespace-nowrap text-center">
-          SITEHEALTH
-        </span>
+      {/* Monumental Cropped Wordmark (decorative) */}
+      <div
+        aria-hidden="true"
+        className="w-full overflow-hidden select-none pointer-events-none opacity-[0.05] -mb-6 sm:-mb-12 lg:-mb-16"
+      >
+        <span
+          data-wm="SITEHEALTH"
+          className="wm-after block font-display text-[8rem] sm:text-[14rem] lg:text-[19rem] leading-none tracking-tighter text-carbon whitespace-nowrap text-center"
+        ></span>
       </div>
     </footer>
   );

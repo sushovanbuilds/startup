@@ -42,7 +42,7 @@ export function HowItWorks() {
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-12 gap-4 pb-4 border-b border-rule">
           <div className="flex items-baseline gap-3">
-            <span className="font-mono text-xs uppercase text-signal font-bold tracking-widest">
+            <span className="font-mono text-xs uppercase text-carbon font-bold tracking-widest">
               01 // PROTOCOL
             </span>
             <h2 className="font-display text-3xl sm:text-4xl text-carbon">
@@ -62,13 +62,15 @@ export function HowItWorks() {
               key={s.n}
               className="border-r border-b border-carbon/20 p-6 relative bg-paper hover:bg-paper-mid transition-colors group"
             >
-              <span className="absolute top-3 right-3 font-mono text-rule-dark text-xs select-none">
+              <span className="absolute top-3 right-3 font-mono text-ink-muted text-xs select-none">
                 +
               </span>
-              <div className="font-mono text-5xl text-carbon/15 font-bold tracking-tighter leading-none mb-4 group-hover:text-signal transition-colors">
-                {s.n}
-              </div>
-              <div className="font-mono text-xs uppercase text-signal font-bold tracking-wider mb-1">
+              <div
+                aria-hidden="true"
+                data-wm={s.n}
+                className="wm-after font-mono text-5xl text-carbon/15 font-bold tracking-tighter leading-none mb-4 group-hover:text-signal-dim transition-colors"
+              ></div>
+              <div className="font-mono text-xs uppercase text-carbon font-bold tracking-wider mb-1">
                 {s.tag}
               </div>
               <h3 className="font-display text-2xl text-carbon mb-2 font-normal">

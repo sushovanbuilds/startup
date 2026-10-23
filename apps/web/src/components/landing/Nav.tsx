@@ -9,10 +9,10 @@ export function Nav() {
     <>
       <header className="fixed top-0 left-0 w-full z-50 bg-paper/95 backdrop-blur-md border-b border-rule">
         <div className="h-14 w-full px-4 sm:px-8 lg:px-12 flex items-center justify-between relative">
-          <div className="absolute -bottom-[5px] left-4 sm:left-8 lg:left-12 text-rule-dark font-mono text-[11px] select-none pointer-events-none leading-none">
+          <div className="absolute -bottom-[5px] left-4 sm:left-8 lg:left-12 text-ink-muted font-mono text-[11px] select-none pointer-events-none leading-none">
             +
           </div>
-          <div className="absolute -bottom-[5px] right-4 sm:right-8 lg:right-12 text-rule-dark font-mono text-[11px] select-none pointer-events-none leading-none">
+          <div className="absolute -bottom-[5px] right-4 sm:right-8 lg:right-12 text-ink-muted font-mono text-[11px] select-none pointer-events-none leading-none">
             +
           </div>
 
@@ -22,7 +22,7 @@ export function Nav() {
               <span className="font-display text-2xl tracking-tight text-carbon font-normal">
                 SiteHealth
               </span>
-              <span className="font-mono text-[11px] text-signal font-semibold tracking-wider">
+              <span className="font-mono text-[11px] text-carbon font-semibold tracking-wider">
                 ®
               </span>
             </a>
@@ -35,23 +35,26 @@ export function Nav() {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden lg:flex items-center gap-8 text-[12px] font-mono uppercase tracking-widest text-ink-muted">
+          <nav
+            aria-label="Primary"
+            className="hidden lg:flex items-center gap-8 text-[12px] font-mono uppercase tracking-widest text-ink-muted"
+          >
             <a
               className="text-carbon font-semibold underline decoration-signal decoration-2 underline-offset-8"
               href="#protocol"
             >
               01 // Protocol
             </a>
-            <a className="hover:text-carbon transition-colors" href="#dossier">
+            <a className="hover:text-carbon transition-colors inline-block py-2 -my-2" href="#dossier">
               02 // Retainer Dossier
             </a>
-            <a className="hover:text-carbon transition-colors" href="#ledger">
+            <a className="hover:text-carbon transition-colors inline-block py-2 -my-2" href="#ledger">
               03 // Drift Ledger
             </a>
-            <a className="hover:text-carbon transition-colors" href="#whitelabel">
+            <a className="hover:text-carbon transition-colors inline-block py-2 -my-2" href="#whitelabel">
               04 // Sovereignty
             </a>
-            <a className="hover:text-carbon transition-colors" href="#licensure">
+            <a className="hover:text-carbon transition-colors inline-block py-2 -my-2" href="#licensure">
               05 // Licensure
             </a>
           </nav>
@@ -59,7 +62,7 @@ export function Nav() {
           {/* Action */}
           <div className="flex items-center gap-4">
             <a
-              className="px-4 py-2 bg-signal text-white font-mono text-[11px] uppercase font-bold tracking-wider hover:bg-carbon transition-colors flex items-center gap-1.5"
+              className="px-4 py-2 bg-signal text-carbon font-mono text-[11px] uppercase font-bold tracking-wider hover:bg-carbon hover:text-white transition-colors flex items-center gap-1.5"
               href="#scan"
             >
               <span>Run Free Scan</span>
@@ -80,16 +83,16 @@ export function Nav() {
               <span className="w-1.5 h-1.5 bg-signal"></span>
               PROBE ENGINE v4.8
             </span>
-            <span className="text-rule-dark">/</span>
+            <span className="text-ink-muted">/</span>
             <span>PROTOCOL: ISO/IEC 25010 ALIGNED</span>
-            <span className="text-rule-dark">/</span>
+            <span className="text-ink-muted">/</span>
             <span className="hidden sm:inline">ROSTER CAPACITY: UNRESTRICTED</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-carbon font-medium">
               RETAINER TELEMETRY SPECIFICATION
             </span>
-            <span className="text-signal font-bold">[ AMBIENT DRIFT COURIER ]</span>
+            <span className="text-carbon font-bold">[ AMBIENT DRIFT COURIER ]</span>
           </div>
         </div>
       </aside>

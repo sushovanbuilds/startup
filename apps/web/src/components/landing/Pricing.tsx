@@ -31,7 +31,7 @@ function featureLines(plan: PlanName): FeatureLine[] {
         { text: 'Manual Instant Scans', cls: 'text-ink-muted' },
         { text: 'Perf + SEO + Posture Checks', cls: 'text-carbon font-medium' },
         { text: 'No Scan History', cls: 'text-ink-muted' },
-        { text: 'White-Label PDF Dossiers', cls: 'text-rule-dark line-through' },
+        { text: 'White-Label PDF Dossiers', cls: 'text-ink-muted line-through' },
       ];
     case 'solo':
       return [
@@ -47,7 +47,7 @@ function featureLines(plan: PlanName): FeatureLine[] {
         { text: `${e.crawled_pages_per_month} Crawled Pages / mo`, cls: 'text-carbon font-semibold' },
         { text: 'White-Label Custom Domain', cls: 'text-carbon font-semibold' },
         { text: 'Client Token Portals', cls: 'text-carbon font-semibold' },
-        { text: 'Automated PDF Dispatch', cls: 'text-signal font-bold' },
+        { text: 'Automated PDF Dispatch', cls: 'text-carbon font-bold' },
       ];
     case 'agency_pro':
       return [
@@ -83,7 +83,7 @@ export function Pricing() {
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-10 pb-4 border-b border-rule gap-4">
           <div>
-            <span className="font-mono text-xs uppercase text-signal font-bold tracking-widest">
+            <span className="font-mono text-xs uppercase text-carbon font-bold tracking-widest">
               05 // LICENSURE
             </span>
             <h2 className="font-display text-3xl sm:text-4xl text-carbon tracking-tight mt-1">
@@ -108,21 +108,21 @@ export function Pricing() {
                   key={plan}
                   className="border-r border-b-2 border-carbon/20 border-b-signal p-6 bg-paper-mid relative flex flex-col justify-between"
                 >
-                  <div className="absolute -top-3 left-4 bg-signal text-white px-2.5 py-0.5 font-mono text-[10px] font-bold tracking-widest uppercase">
+                  <div className="absolute -top-3 left-4 bg-signal text-carbon px-2.5 py-0.5 font-mono text-[10px] font-bold tracking-widest uppercase">
                     RECOMMENDED
                   </div>
                   <div>
-                    <div className="font-mono text-[10px] text-signal font-bold uppercase tracking-widest">
+                    <div className="font-mono text-[10px] text-carbon font-bold uppercase tracking-widest">
                       {HEADERS[plan]}
                     </div>
-                    <div className="font-display text-2xl text-carbon mt-1 font-normal">
+                    <h3 className="font-display text-2xl text-carbon mt-1 font-normal">
                       {PLAN_DISPLAY_NAMES[plan]}
-                    </div>
+                    </h3>
                     <div className="font-mono text-4xl text-carbon my-3 font-semibold">
                       {fmt.format(price)}
                       <span className="text-xs text-ink-muted font-normal">/mo</span>
                     </div>
-                    <div className="font-mono text-[10px] text-signal font-bold uppercase">
+                    <div className="font-mono text-[10px] text-carbon font-bold uppercase">
                       {FOOTNOTE[plan]}
                     </div>
                     <div className="mt-6 pt-4 border-t border-carbon/20 space-y-2.5 font-mono text-xs">
@@ -133,7 +133,7 @@ export function Pricing() {
                       ))}
                     </div>
                   </div>
-                  <button className="mt-8 w-full py-3 bg-carbon text-white font-mono text-xs uppercase font-bold hover:bg-signal transition-colors flex items-center justify-center gap-1.5">
+                  <button className="mt-8 w-full py-3 bg-carbon text-white font-mono text-xs uppercase font-bold hover:bg-signal hover:text-carbon transition-colors flex items-center justify-center gap-1.5">
                     <span>Deploy Starter Fleet</span>
                     <ArrowRight className="h-[14px] w-[14px]" aria-hidden="true" />
                   </button>
@@ -147,9 +147,9 @@ export function Pricing() {
                     <div className="font-mono text-[10px] text-ink-muted uppercase tracking-widest">
                       {HEADERS[plan]}
                     </div>
-                    <div className="font-display text-2xl text-carbon mt-1 font-normal">
+                    <h3 className="font-display text-2xl text-carbon mt-1 font-normal">
                       {PLAN_DISPLAY_NAMES[plan]}
-                    </div>
+                    </h3>
                     <div className="font-mono text-4xl text-carbon my-3 font-semibold">
                       {price === 0 ? '₹0' : fmt.format(price)}
                       <span className="text-xs text-ink-muted font-normal">/mo</span>

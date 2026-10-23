@@ -13,7 +13,7 @@ export function FeatureSpread() {
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center">
         {/* Left: Editorial Spec Sheet */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="flex items-center gap-2 font-mono text-xs text-signal font-bold uppercase tracking-wider">
+          <div className="flex items-center gap-2 font-mono text-xs text-carbon font-bold uppercase tracking-wider">
             <span>02 // ARTIFACT SPECIFICATION</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-carbon tracking-tight leading-tight">
@@ -47,7 +47,7 @@ export function FeatureSpread() {
               </div>
               <div className="flex justify-between">
                 <dt className="text-ink-muted">AGENCY BRANDING:</dt>
-                <dd className="text-signal font-bold">
+                <dd className="text-carbon font-bold">
                   100% Unbranded · Pure Agency Retainer Asset
                 </dd>
               </div>
@@ -56,7 +56,7 @@ export function FeatureSpread() {
 
           <div className="pt-2">
             <a
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase font-bold text-carbon hover:text-signal transition-colors underline decoration-signal underline-offset-4"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase font-bold text-carbon hover:text-signal-dim transition-colors underline decoration-signal underline-offset-4"
               href="#"
             >
               <span>[ VIEW SAMPLE CLIENT DOSSIER: MERIDIAN_STUDIO_MAY.PDF ]</span>
@@ -71,7 +71,7 @@ export function FeatureSpread() {
             {/* Sheet Header */}
             <div className="border-b-2 border-carbon pb-4 mb-5 flex flex-col sm:flex-row sm:items-end justify-between gap-3">
               <div>
-                <span className="font-mono text-[10px] text-signal font-bold tracking-widest uppercase block mb-1">
+                <span className="font-mono text-[10px] text-carbon font-bold tracking-widest uppercase block mb-1">
                   MONTHLY INFRASTRUCTURE DOSSIER • MAY 2025
                 </span>
                 <div className="font-display text-2xl sm:text-3xl text-carbon font-normal">
@@ -130,7 +130,7 @@ export function FeatureSpread() {
                   </td>
                   <td className="py-2.5">1.14s</td>
                   <td className="py-2.5 text-ink-muted hidden sm:table-cell">&lt; 2.50s</td>
-                  <td className="py-2.5 text-right text-signal font-bold">NOMINAL</td>
+                  <td className="py-2.5 text-right text-carbon font-bold">NOMINAL</td>
                 </tr>
                 <tr>
                   <td className="py-2.5 text-carbon font-semibold">
@@ -138,7 +138,7 @@ export function FeatureSpread() {
                   </td>
                   <td className="py-2.5">0.008</td>
                   <td className="py-2.5 text-ink-muted hidden sm:table-cell">&lt; 0.100</td>
-                  <td className="py-2.5 text-right text-signal font-bold">NOMINAL</td>
+                  <td className="py-2.5 text-right text-carbon font-bold">NOMINAL</td>
                 </tr>
                 <tr>
                   <td className="py-2.5 text-carbon font-semibold">
@@ -146,7 +146,7 @@ export function FeatureSpread() {
                   </td>
                   <td className="py-2.5">42ms</td>
                   <td className="py-2.5 text-ink-muted hidden sm:table-cell">&lt; 200ms</td>
-                  <td className="py-2.5 text-right text-signal font-bold">NOMINAL</td>
+                  <td className="py-2.5 text-right text-carbon font-bold">NOMINAL</td>
                 </tr>
                 <tr>
                   <td className="py-2.5 text-carbon font-semibold">
@@ -171,7 +171,7 @@ export function FeatureSpread() {
 
             {/* Agency Director Note */}
             <div className="bg-paper p-4 border-l-2 border-signal relative font-mono">
-              <span className="text-[10px] text-signal font-bold uppercase tracking-wider block mb-1">
+              <span className="text-[10px] text-carbon font-bold uppercase tracking-wider block mb-1">
                 ¶ AGENCY ACCOUNT LEAD DIRECTIVE:
               </span>
               <p className="font-display italic text-sm text-carbon leading-snug">
