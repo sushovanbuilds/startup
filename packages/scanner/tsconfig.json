@@ -2,11 +2,13 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "composite": true
+    "paths": {
+      "@sitehealth/shared": ["packages/shared/src/index.ts"],
+      "@sitehealth/shared/*": ["packages/shared/src/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

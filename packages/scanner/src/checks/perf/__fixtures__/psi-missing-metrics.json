@@ -1,0 +1,15 @@
+{
+  "lighthouseResult": {
+    "audits": {},
+    "categories": {
+      "performance": {
+        "score": null
+      }
+    },
+    "requestedUrl": "https://example.com/",
+    "finalUrl": "https://example.com/"
+  },
+  "loadingExperience": null,
+  "originLoadingExperience": null,
+  "analysisUTCTimestamp": "2024-01-15T10:30:00Z"
+}

@@ -1,0 +1,63 @@
+{
+  "lighthouseResult": {
+    "audits": {
+      "largest-contentful-paint": {
+        "numericValue": 1800,
+        "displayValue": "1.8 s",
+        "score": 1
+      },
+      "cumulative-layout-shift": {
+        "numericValue": 0.05,
+        "displayValue": "0.05",
+        "score": 1
+      },
+      "interactive": {
+        "numericValue": 150,
+        "displayValue": "150 ms",
+        "score": 1
+      }
+    },
+    "categories": {
+      "performance": {
+        "score": 0.95
+      }
+    },
+    "requestedUrl": "https://example.com/",
+    "finalUrl": "https://example.com/"
+  },
+  "loadingExperience": {
+    "metrics": {
+      "LARGEST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1600,
+        "category": "FAST"
+      },
+      "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+        "percentile": 0.04,
+        "category": "FAST"
+      },
+      "INTERACTION_TO_NEXT_PAINT": {
+        "percentile": 120,
+        "category": "FAST"
+      }
+    },
+    "overall_category": "FAST"
+  },
+  "originLoadingExperience": {
+    "metrics": {
+      "LARGEST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1700,
+        "category": "FAST"
+      },
+      "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+        "percentile": 0.03,
+        "category": "FAST"
+      },
+      "INTERACTION_TO_NEXT_PAINT": {
+        "percentile": 130,
+        "category": "FAST"
+      }
+    },
+    "overall_category": "FAST"
+  },
+  "analysisUTCTimestamp": "2024-01-15T10:30:00Z"
+}

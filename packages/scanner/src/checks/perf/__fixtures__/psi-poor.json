@@ -1,0 +1,46 @@
+{
+  "lighthouseResult": {
+    "audits": {
+      "largest-contentful-paint": {
+        "numericValue": 6500,
+        "displayValue": "6.5 s",
+        "score": 0
+      },
+      "cumulative-layout-shift": {
+        "numericValue": 0.5,
+        "displayValue": "0.5",
+        "score": 0
+      },
+      "interactive": {
+        "numericValue": 800,
+        "displayValue": "800 ms",
+        "score": 0
+      }
+    },
+    "categories": {
+      "performance": {
+        "score": 0.3
+      }
+    },
+    "requestedUrl": "https://example.com/",
+    "finalUrl": "https://example.com/"
+  },
+  "loadingExperience": {
+    "metrics": {
+      "LARGEST_CONTENTFUL_PAINT_MS": {
+        "percentile": 6000,
+        "category": "SLOW"
+      },
+      "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+        "percentile": 0.45,
+        "category": "SLOW"
+      },
+      "INTERACTION_TO_NEXT_PAINT": {
+        "percentile": 750,
+        "category": "SLOW"
+      }
+    },
+    "overall_category": "SLOW"
+  },
+  "analysisUTCTimestamp": "2024-01-15T10:30:00Z"
+}

@@ -18,6 +18,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
+import type { Resolver } from 'node:dns';
 import {
   safeFetch,
   validateFetchUrl,
@@ -38,12 +39,13 @@ const { mockResolve4, mockResolve6, mockSetServers } = vi.hoisted(() => ({
   mockSetServers: vi.fn(),
 }));
 
-// Create a mock resolver - using a simplified type to avoid complex DNS types
+// Create a mock resolver - simplified type; a cast is needed because
+// implementing the full Resolver interface in a test would be overkill.
 const mockResolver = {
   setServers: mockSetServers,
   resolve4: mockResolve4,
   resolve6: mockResolve6,
-};
+} as unknown as Resolver;
 
 // Set the mock resolver for testing BEFORE importing other modules
 setResolverForTesting(mockResolver);
