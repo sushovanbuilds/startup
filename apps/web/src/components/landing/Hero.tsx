@@ -7,10 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export function Hero() {
   return (
     <section className="w-full bg-paper relative px-4 sm:px-8 lg:px-12 pt-12 lg:pt-16 pb-16 border-b border-rule">
-      <span className="absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-ink-muted font-mono text-sm select-none">
+      <span className="motion-drift absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-ink-muted font-mono text-sm select-none">
         ⌖
       </span>
-      <span className="absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-ink-muted font-mono text-sm select-none">
+      <span className="motion-drift absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-ink-muted font-mono text-sm select-none">
         ⌖
       </span>
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-start">
@@ -23,7 +23,7 @@ export function Hero() {
               </span>
               <span className="text-ink-muted font-mono text-[11px]">§ 104.28</span>
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-[62px] text-carbon tracking-tight mb-5 leading-[1.04]">
+            <h1 className="motion-hero-headline font-display text-4xl sm:text-5xl lg:text-[62px] text-carbon tracking-tight mb-5 leading-[1.04]">
               Your clients’ websites, <em className="italic font-normal">quietly</em>{' '}
               watched.
             </h1>
@@ -57,7 +57,7 @@ export function Hero() {
                 />
               </div>
               <button
-                className="bg-signal text-carbon font-mono text-[11px] uppercase font-bold tracking-wider px-6 py-3 hover:bg-carbon hover:text-white transition-colors flex items-center justify-center gap-2 shrink-0"
+                className="motion-magnetic bg-signal text-carbon font-mono text-[11px] uppercase font-bold tracking-wider px-6 py-3 hover:bg-carbon hover:text-white transition-colors flex items-center justify-center gap-2 shrink-0"
                 type="button"
               >
                 <span>RUN DIAGNOSTIC</span>
@@ -101,7 +101,7 @@ export function Hero() {
         </div>
 
         {/* Right: Engineered Isometric Measuring Plates & Dossier Overlay */}
-        <div className="lg:col-span-6 relative mt-4 lg:mt-0">
+        <div className="motion-hero-plates lg:col-span-6 relative z-10 mt-4 lg:mt-0">
           <div className="border border-carbon/20 bg-paper-low p-4 sm:p-6 relative overflow-hidden min-h-[580px] flex flex-col justify-between">
             {/* Frame Header */}
             <div className="flex items-center justify-between pb-3 border-b border-rule font-mono text-[11px]">

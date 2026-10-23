@@ -85,6 +85,15 @@
     display: block;
   }
 
+  /* Lenis runtime classes (only present when JS loads the smooth-scroller). */
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
   * {
     border-radius: 0 !important;
   }

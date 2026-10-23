@@ -106,7 +106,7 @@ export function Pricing() {
                 /* Recommended tier — signal-ruled, raised badge */
                 <div
                   key={plan}
-                  className="border-r border-b-2 border-carbon/20 border-b-signal p-6 bg-paper-mid relative flex flex-col justify-between"
+                  className="motion-pricing-row border-r border-b-2 border-carbon/20 border-b-signal p-6 bg-paper-mid relative flex flex-col justify-between"
                 >
                   <div className="absolute -top-3 left-4 bg-signal text-carbon px-2.5 py-0.5 font-mono text-[10px] font-bold tracking-widest uppercase">
                     RECOMMENDED
@@ -141,7 +141,7 @@ export function Pricing() {
               ) : (
                 <div
                   key={plan}
-                  className="border-r border-b border-carbon/20 p-6 bg-paper flex flex-col justify-between"
+                  className="motion-pricing-row border-r border-b border-carbon/20 p-6 bg-paper flex flex-col justify-between"
                 >
                   <div>
                     <div className="font-mono text-[10px] text-ink-muted uppercase tracking-widest">

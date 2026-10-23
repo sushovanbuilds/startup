@@ -66,7 +66,7 @@ export function ChangesDark() {
             {events.map((ev) => (
               <div
                 key={ev.ts}
-                className="p-5 flex flex-col lg:flex-row lg:items-center justify-between gap-2 hover:bg-white/[0.03] transition-colors"
+                className="motion-ledger-row p-5 flex flex-col lg:flex-row lg:items-center justify-between gap-2 hover:bg-white/[0.03] transition-colors"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-rule-bright text-[11px]">{ev.ts}</span>

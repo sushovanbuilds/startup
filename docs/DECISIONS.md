@@ -6,3 +6,5 @@
 - Pricing in packages/shared/plans.ts is a hypothesis; change there only.
 - Drizzle ORM for DB schema/migrations (type-safe, lightweight, works with Postgres/Supabase)
 - eslint-config-next@14.2.35 devDep in apps/web — makes `next lint` non-interactive and gives the web app a real lint gate.
+- gsap (runtime dep, apps/web) — ScrollTrigger scrub parallax/pinning/reveal timelines for the landing; not practical with CSS alone.
+- lenis (runtime dep, apps/web) — inertial smooth scrolling synced to ScrollTrigger's update loop; disabled outright under prefers-reduced-motion.

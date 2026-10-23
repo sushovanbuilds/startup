@@ -16,6 +16,7 @@ Lanes can run in parallel by different agents. Stage order matters, lanes inside
 [ ] T1.6 Landing page + free scan UI + results + share link | apps/web | PRD | T1.5 | works end-to-end with rate limit
 [ ] T1.6a Landing page UI (static) | apps/web components/landing + app/page.tsx | Stitch: stitch_sitesignal_editorial_agency_landing | T0.1 | rebuild Stitch design pixel-faithful; tokens in Tailwind config; self-hosted fonts via next/font; pricing from packages/shared/plans.ts; responsive 1440/390; no external CDN images (claimed: agent 2026-10-24)
 [x] T1.6b Landing polish | apps/web src/app + components/landing | WCAG AA + Next best practices | T1.6a | heading hierarchy, alt/aria, focus states, AA contrast (orange text -> ink, orange stays fills/borders), keyboard nav, meta/OG, favicon, a11y audit; no new deps
+[x] T1.6c Landing motion | apps/web components/landing/motion | T1.6b | Lenis smooth scroll + GSAP/ScrollTrigger parallax & reveals, magnetic scan button, reduced-motion respected, pin desktop-only, transform/opacity only, cleanup on unmount, client-only + no-JS render; perf within 3 pts of Stage B
 
 ## Stage 2 — Platform
 [ ] T2.1 Auth + workspaces + membership + authz middleware | apps/web | DATA-MODEL | T0.3 | cross-tenant tests

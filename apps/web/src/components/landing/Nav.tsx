@@ -9,10 +9,10 @@ export function Nav() {
     <>
       <header className="fixed top-0 left-0 w-full z-50 bg-paper/95 backdrop-blur-md border-b border-rule">
         <div className="h-14 w-full px-4 sm:px-8 lg:px-12 flex items-center justify-between relative">
-          <div className="absolute -bottom-[5px] left-4 sm:left-8 lg:left-12 text-ink-muted font-mono text-[11px] select-none pointer-events-none leading-none">
+          <div className="motion-drift absolute -bottom-[5px] left-4 sm:left-8 lg:left-12 text-ink-muted font-mono text-[11px] select-none pointer-events-none leading-none">
             +
           </div>
-          <div className="absolute -bottom-[5px] right-4 sm:right-8 lg:right-12 text-ink-muted font-mono text-[11px] select-none pointer-events-none leading-none">
+          <div className="motion-drift absolute -bottom-[5px] right-4 sm:right-8 lg:right-12 text-ink-muted font-mono text-[11px] select-none pointer-events-none leading-none">
             +
           </div>
 

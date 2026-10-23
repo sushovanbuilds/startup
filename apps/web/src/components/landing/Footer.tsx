@@ -20,10 +20,10 @@ export function Footer() {
   return (
     <footer className="w-full bg-paper-low text-ink relative overflow-hidden border-t border-rule">
       <div className="w-full px-4 sm:px-8 lg:px-12 pt-16 pb-8 relative">
-        <div className="absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-ink-muted font-mono text-xs select-none pointer-events-none">
+        <div className="motion-drift absolute top-0 left-4 sm:left-8 lg:left-12 -translate-y-1/2 text-ink-muted font-mono text-xs select-none pointer-events-none">
           +
         </div>
-        <div className="absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-ink-muted font-mono text-xs select-none pointer-events-none">
+        <div className="motion-drift absolute top-0 right-4 sm:right-8 lg:right-12 -translate-y-1/2 text-ink-muted font-mono text-xs select-none pointer-events-none">
           +
         </div>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">

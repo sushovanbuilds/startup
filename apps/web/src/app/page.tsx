@@ -1,4 +1,5 @@
 import { Nav } from '@/components/landing/Nav';
+import { LandingMotion } from '@/components/landing/motion/LandingMotion';
 import { Hero } from '@/components/landing/Hero';
 import { HowItWorks } from '@/components/landing/HowItWorks';
 import { FeatureSpread } from '@/components/landing/FeatureSpread';
@@ -17,6 +18,7 @@ export default function HomePage() {
       >
         Skip to main content
       </a>
+      <LandingMotion />
       <Nav />
       <main id="main-content" className="w-full pt-14">
         <Hero />

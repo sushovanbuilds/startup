@@ -56,7 +56,7 @@ export function HowItWorks() {
         </div>
 
         {/* 4-Column Ruled Matrix */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-carbon/20">
+        <div className="cadence-matrix grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-carbon/20">
           {steps.map((s) => (
             <div
               key={s.n}
@@ -68,7 +68,7 @@ export function HowItWorks() {
               <div
                 aria-hidden="true"
                 data-wm={s.n}
-                className="wm-after font-mono text-5xl text-carbon/15 font-bold tracking-tighter leading-none mb-4 group-hover:text-signal-dim transition-colors"
+                className="cadence-numeral wm-after font-mono text-5xl text-carbon/15 font-bold tracking-tighter leading-none mb-4 group-hover:text-signal-dim transition-colors"
               ></div>
               <div className="font-mono text-xs uppercase text-carbon font-bold tracking-wider mb-1">
                 {s.tag}
