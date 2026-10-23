@@ -2,18 +2,45 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "jsx": "preserve",
     "noEmit": true,
-    "plugins": [{ "name": "next" }],
+    // baseUrl must shadow the root's "." (repo-relative) so the mappings below
+    // resolve against apps/web like Next tsconfig templates expect.
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@sitehealth/shared/*": ["../../packages/shared/src/*"],
-      "@sitehealth/scanner/*": ["../../packages/scanner/src/*"],
-      "@sitehealth/db/*": ["../../packages/db/src/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ],
+      "@sitehealth/shared/*": [
+        "../../packages/shared/src/*"
+      ],
+      "@sitehealth/scanner/*": [
+        "../../packages/scanner/src/*"
+      ],
+      "@sitehealth/db/*": [
+        "../../packages/db/src/*"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
