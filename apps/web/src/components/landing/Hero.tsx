@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { HeroPlates } from './hero3d/HeroPlates';
 
 /**
  * Hero: editorial narrative + probe console + stat strip on the left,
@@ -116,114 +117,8 @@ export function Hero() {
 
             {/* Plate Stack */}
             <div className="relative py-4 flex-1 flex flex-col justify-center">
-              <div className="relative w-full max-w-[500px] mx-auto py-2">
-                {/* Plate 01: Runtime & Vitals */}
-                <div className="relative z-30 mb-3 bg-white border border-carbon/30 p-3.5 shadow-plate hover:-translate-y-1 transition-transform">
-                  <div className="flex items-center justify-between border-b border-rule pb-2 mb-2 font-mono text-[11px]">
-                    <div className="flex items-center gap-2 text-carbon font-bold">
-                      <span aria-hidden="true" className="inline-block w-2 h-2 bg-signal"></span>
-                      <span>[PLATE 01: RUNTIME &amp; CORE WEB VITALS]</span>
-                    </div>
-                    <span className="bg-paper-mid px-2 py-0.5 text-[10px] text-carbon font-bold border border-rule">
-                      HEALTH SCORE: 98/100
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 font-mono">
-                    <div className="bg-paper-low p-2 border border-rule">
-                      <span className="text-[9px] text-ink-muted uppercase block">
-                        LCP OBSERVED
-                      </span>
-                      <span className="text-base font-bold text-carbon">1.14s</span>
-                      <span className="text-[9px] text-carbon font-semibold block">
-                        NOMINAL (&lt;2.5s)
-                      </span>
-                    </div>
-                    <div className="bg-paper-low p-2 border border-rule">
-                      <span className="text-[9px] text-ink-muted uppercase block">
-                        CLS DELTA
-                      </span>
-                      <span className="text-base font-bold text-carbon">0.008</span>
-                      <span className="text-[9px] text-carbon font-semibold block">
-                        ZERO DRIFT
-                      </span>
-                    </div>
-                    <div className="bg-paper-low p-2 border border-rule">
-                      <span className="text-[9px] text-ink-muted uppercase block">
-                        INP INPUT
-                      </span>
-                      <span className="text-base font-bold text-carbon">42ms</span>
-                      <span className="text-[9px] text-carbon font-semibold block">
-                        RESPONSIVE
-                      </span>
-                    </div>
-                  </div>
-                  <div className="mt-2 pt-1 flex items-center justify-between text-[10px] font-mono text-ink-muted border-t border-rule/50">
-                    <span>DOM DENSITY: 812 NODES</span>
-                    <span>PAYLOAD: 1.2MB</span>
-                    <span className="text-carbon font-semibold">TBT: 20ms</span>
-                  </div>
-                </div>
-
-                {/* Plate 02: Discovery & Crawl Budget */}
-                <div className="relative z-20 mb-3 bg-paper border border-carbon/30 p-3.5 shadow-plate ml-3 -mt-2">
-                  <div className="flex items-center justify-between border-b border-rule pb-2 mb-2 font-mono text-[11px]">
-                    <div className="flex items-center gap-2 text-carbon font-bold">
-                      <span className="text-carbon">■</span>
-                      <span>[PLATE 02: DISCOVERY &amp; CRAWL BUDGET]</span>
-                    </div>
-                    <span className="text-ink-muted text-[10px]">
-                      CRAWL COGNIZANCE
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 font-mono text-[11px]">
-                    <div className="flex justify-between items-center bg-white p-2 border border-rule">
-                      <span className="text-ink-muted">CANONICAL INTEGRITY:</span>
-                      <span className="font-bold text-carbon">100% UNBROKEN</span>
-                    </div>
-                    <div className="flex justify-between items-center bg-white p-2 border border-rule">
-                      <span className="text-ink-muted">ROBOTS.TXT HASH:</span>
-                      <span className="font-bold text-carbon">VERIFIED #9C11</span>
-                    </div>
-                  </div>
-                  <div className="mt-2 text-[10px] font-mono text-ink-muted flex justify-between">
-                    <span>OPEN GRAPH SCHEMA: VALID</span>
-                    <span>SITEMAP: 142 ENTRIES RECONCILED</span>
-                  </div>
-                </div>
-
-                {/* Plate 03: Defense Posture & TLS */}
-                <div className="relative z-10 bg-paper-mid border border-carbon/30 p-3.5 shadow-plate ml-6 -mt-2">
-                  <div className="flex items-center justify-between border-b border-rule pb-2 mb-2 font-mono text-[11px]">
-                    <div className="flex items-center gap-2 text-carbon font-bold">
-                      <span className="text-carbon-soft">■</span>
-                      <span>[PLATE 03: DEFENSE POSTURE &amp; TLS]</span>
-                    </div>
-                    <span className="text-carbon font-bold text-[10px]">
-                      SSL RENEWAL: 64 DAYS REMAINING
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 font-mono text-[10px]">
-                    <div className="bg-white p-1.5 border border-rule">
-                      <span className="text-ink-muted block text-[9px]">
-                        TLS HANDSHAKE
-                      </span>
-                      <span className="font-bold text-carbon">TLS 1.3 ChaCha20</span>
-                    </div>
-                    <div className="bg-white p-1.5 border border-rule">
-                      <span className="text-ink-muted block text-[9px]">
-                        SECURITY HEADERS
-                      </span>
-                      <span className="font-bold text-carbon">HSTS PRELOAD + CSP</span>
-                    </div>
-                    <div className="bg-white p-1.5 border border-rule">
-                      <span className="text-ink-muted block text-[9px]">
-                        SUBRESOURCE HASH
-                      </span>
-                      <span className="font-bold text-carbon">18/18 VALIDATED</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Three-plate apparatus: 3D scene with static SVG fallback (T1.6d) */}
+              <HeroPlates />
 
               {/* Foreground Archival Inspection Specimen Tag */}
               <div className="mt-4 bg-white border border-carbon/40 p-3 relative font-mono text-[11px]">

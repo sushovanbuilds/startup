@@ -10,6 +10,10 @@
     "allowJs": true,
     "jsx": "preserve",
     "noEmit": true,
+    // Next is bundled, not Node-resolved: bundler mode matches the Next 14
+    // tsconfig template and allows extensionless dynamic imports + "@/" paths.
+    "module": "esnext",
+    "moduleResolution": "bundler",
     // baseUrl must shadow the root's "." (repo-relative) so the mappings below
     // resolve against apps/web like Next tsconfig templates expect.
     "baseUrl": ".",

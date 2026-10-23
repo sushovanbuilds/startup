@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { setHeroProgress } from '../hero3d/store';
 
 /**
  * Landing motion layer (client-only, progressive enhancement).
@@ -64,6 +65,16 @@ export function LandingMotion() {
             end: 'bottom top',
             scrub: true,
           },
+        });
+
+        // Feed the 3D hero (three.js) the hero scrub progress: the Sculpted
+        // plates separate vertically with scroll ("exploded view"). Plain
+        // module store — no React re-render per frame.
+        ScrollTrigger.create({
+          trigger: '#scan',
+          start: 'top bottom',
+          end: 'bottom top',
+          onUpdate: (self) => setHeroProgress(self.progress),
         });
 
         // Hairline crosshair marks drift subtly across the whole document.

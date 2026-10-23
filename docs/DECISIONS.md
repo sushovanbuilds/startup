@@ -8,3 +8,4 @@
 - eslint-config-next@14.2.35 devDep in apps/web — makes `next lint` non-interactive and gives the web app a real lint gate.
 - gsap (runtime dep, apps/web) — ScrollTrigger scrub parallax/pinning/reveal timelines for the landing; not practical with CSS alone.
 - lenis (runtime dep, apps/web) — inertial smooth scrolling synced to ScrollTrigger's update loop; disabled outright under prefers-reduced-motion.
+- three@0.169 + @react-three/fiber@8 + @react-three/drei@9 (runtime, apps/web) — T1.6d 3D hero apparatus (thin plate scene); v8/v9 lines chosen to stay on React 18; dynamic-imported with WebGL/feature fallbacks.
