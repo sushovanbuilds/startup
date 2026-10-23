@@ -1,0 +1,44 @@
+{
+  "name": "@sitehealth/shared",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./plans": {
+      "types": "./dist/plans.d.ts",
+      "import": "./dist/plans.js",
+      "require": "./dist/plans.js"
+    },
+    "./checks": {
+      "types": "./dist/checks.d.ts",
+      "import": "./dist/checks.js",
+      "require": "./dist/checks.js"
+    },
+    "./findings": {
+      "types": "./dist/findings.d.ts",
+      "import": "./dist/findings.js",
+      "require": "./dist/findings.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
